@@ -1,0 +1,6 @@
+custom=(
+'puppet agent --enable; puppet agent -t -E lm; puppet agent --disable;: pl'
+'puppet agent --enable; puppet agent -t -E lm --noop; puppet agent --disable;: ps'
+'ansible-playbook site.yml: as'
+'ansible-playbook --check --diff site.yml: ac'
+)

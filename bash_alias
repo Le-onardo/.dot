@@ -1,0 +1,11 @@
+#!/bin/bash
+alias c="cd_to_staging_folder"
+alias m="cd $HOME/m"
+alias g='git branch'
+alias ga='git commit --amend --no-edit'
+alias gs='git show'
+alias gc='git commit'
+alias gp='git pull'
+alias grh='read -p"Do you really want to hard reset the repo to origin/master? [y/n]" tmp && [ $tmp = 'y' ] && git reset --hard origin/master'
+alias v='vim'
+alias s='ssh'
