@@ -2,7 +2,7 @@
 perm() {
 	current_folder=$(pwd)
 	current_customer=$(echo $current_folder | grep -Po "/home/`whoami`/k/\K\w+")
-	find /home/`whoami`/k/${current_customer}/* -user `whoami` -and -group users -exec chown "$(whoami):${current_customer}" \;
+	find /home/`whoami`/k/${current_customer}/* -user `whoami` -and -group users -exec chown "$(whoami):${current_customer}" {} \;
 }
 
 f() {
@@ -25,7 +25,7 @@ diff_files () {
 	whiptail --title "Choose files from diff" --menu "Choose your option" 15 60 4 $list_build_options 3>&1 1>&2 2>&3
 }
 
-current_staging_folder()
+cd_to_staging_folder()
 {
-	cd $(`whoami`/.dot/do_something_very_simple.py $(pwd))
+	cd $(pwd | cut -d'/' -f1-5)
 }
