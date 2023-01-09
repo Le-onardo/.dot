@@ -111,7 +111,11 @@ source $ZSH/oh-my-zsh.sh
 #)
 
 alias lt="ls -latrh"
-alias dot="/usr/bin/git --git-dir=$HOME/.dot/.git --work-tree=$HOME"
 source ~/.dot/bash_path
 source ~/.dot/bash_functions
 source ~/.dot/bash_alias
+
+# home directory git managed
+# to clone this use:
+# git clone --separate-git-dir=~/.dot git@github.com:Le-onardo/.dot.git ~
+alias dot="/usr/bin/git --git-dir=$HOME/.dot/.git --work-tree=$HOME"
