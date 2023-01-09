@@ -111,9 +111,9 @@ source $ZSH/oh-my-zsh.sh
 #)
 
 alias lt="ls -latrh"
-source ~/.dot/bash_path
-source ~/.dot/bash_functions
-source ~/.dot/bash_alias
+source ~/.dot/.bash_path
+source ~/.dot/.bash_functions
+source ~/.dot/.bash_alias
 
 # home directory git managed
 # to clone this use:

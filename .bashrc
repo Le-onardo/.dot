@@ -134,7 +134,7 @@ alias x='xclip -selection clipboard'
 export PATH="${PATH}:/home/lm/tmux-cssh"
 alias t='tmux-cssh -c'
 
-source ~/bash_alias
-source ~/bash_functions
+source ~/.bash_alias
+source ~/.bash_functions
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
